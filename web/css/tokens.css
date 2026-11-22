@@ -1,0 +1,262 @@
+/* Case Closed design system — generated from tokens.json */
+:root, [data-theme="night"] {
+  --ground: #0b1026; /* Page background of every game screen. Changes with the case theme. Also the code viewer background. */
+  --panel: #131a3a; /* Dark panels on the ground: Toolkit, notebook, browser frame, case details. */
+  --panel-raised: #212a55; /* Inactive browser tabs and Ama’s portrait tile. One step above panel. */
+  --line: #2b3566; /* Hairline dividers on dark surfaces and the colour of dark-surface hard shadows. */
+  --text: #eef1ff; /* Primary text and outlines on ground and panel, in every theme. */
+  --text-soft: #c9d1f5; /* Lead paragraphs and secondary text on ground and panel. */
+  --text-muted: #a9b3de; /* Mono labels, eyebrows, metadata and code line numbers on dark surfaces. Passes 4.5:1 on panel and panel-raised. */
+  --text-faint: #7c87b8; /* Dashed outlines of locked or empty things (locked cases, locked tools, empty notebook slots). Borders only, never text. */
+  --action: #ffc83d; /* The one action colour: primary buttons, the selected pill, the highlighted clue line, the waiting notebook slot, the wordmark. Same in every theme. */
+  --ink: #141310; /* Text, outlines and hard shadows on paper and on any light fill (action, suspect, sticker). */
+  --ink-2: #3a372f; /* Body text on paper and card. */
+  --ink-muted: #5a564d; /* Mono labels and eyebrows on paper, card and sunk. */
+  --paper: #f3efe6; /* Full-width light bands that break up long pages (home "How a case plays"). */
+  --card: #fffdf8; /* Light cards: Ama’s dialogue, exhibits, the selected case card, secondary buttons. */
+  --sunk: #e9e4d9; /* Inset areas inside a card, such as an evidence slip. */
+  --sticker: #ffb25b; /* The one tilted sticker per screen. Nothing else uses it. */
+  --suspect-1: #ff8fb8; /* First suspect of a case. Follows that suspect everywhere: profile, chip, notebook, crime board. */
+  --suspect-2: #6cc6ff; /* Second suspect of a case. */
+  --suspect-3: #b9a2ff; /* Third suspect of a case. */
+  --suspect-4: #8fe3b0; /* Fourth suspect, for cases that have one. */
+  --evidence-red: #c4302b; /* Crime-board red: the thread, pins and the CASE CLOSED stamp. Never for errors or buttons. */
+  --code-tag: #8fb4ff; /* HTML tag names in the source viewer. */
+  --moon: #ffe9a8; /* Moon and lit details in pixel scenes. */
+  --scene-sky-1: #0f1640; /* Pixel scene: top sky band. */
+  --scene-sky-2: #141d52; /* Pixel scene: middle sky band. */
+  --scene-sky-3: #1a2566; /* Pixel scene: lowest sky band, and the road dashes. */
+  --scene-far: #111a4c; /* Pixel scene: far hills and tree line. */
+  --scene-near: #060a1c; /* Pixel scene: foreground ground strip and silhouettes. */
+  --shadow-sm: 4px 4px 0 #141310; /* Small buttons and stickers on light surfaces. */
+  --shadow-sm-line: 4px 4px 0 #2b3566; /* Secondary buttons on dark surfaces. */
+  --shadow-ink: 8px 8px 0 #141310; /* Cards on paper. */
+  --shadow-panel: 8px 8px 0 #2b3566; /* Dark panels and light cards sitting on the ground. */
+  --shadow-focus: 8px 8px 0 #ffc83d; /* The one panel in focus (the Toolkit while investigating) and the selected case card. */
+  --shadow-hero: 14px 14px 0 #ffc83d; /* Hero cards: the home page source card, the case-file evidence card. */
+  --shadow-action: 7px 7px 0 #eef1ff; /* Primary button on dark surfaces. */
+  --shadow-action-paper: 6px 6px 0 #141310; /* Primary button on paper or card. */
+  --shadow-wordmark: 5px 5px 0 #eef1ff; /* The CASE CLOSED wordmark. */
+  --shadow-key: 0 5px 0 #141310; /* Keycap drop under step numbers and Ama’s portrait. */
+}
+[data-theme="dusk"] {
+  --ground: #1f0e24;
+  --panel: #2a1530;
+  --panel-raised: #3a1d44;
+  --line: #57306a;
+  --text-soft: #e0c9e8;
+  --text-muted: #c6a9d0;
+  --text-faint: #93709f;
+  --scene-sky-1: #2a1233;
+  --scene-sky-2: #3a1845;
+  --scene-sky-3: #4f1f54;
+  --scene-far: #331541;
+  --scene-near: #12071a;
+  --shadow-sm-line: 4px 4px 0 #57306a;
+  --shadow-panel: 8px 8px 0 #57306a;
+}
+[data-theme="dawn"] {
+  --ground: #06201f;
+  --panel: #0b2b29;
+  --panel-raised: #123a37;
+  --line: #1f5a54;
+  --text-soft: #bfe3dd;
+  --text-muted: #9ccbc3;
+  --text-faint: #5e968e;
+  --scene-sky-1: #0a2b2a;
+  --scene-sky-2: #0f3a37;
+  --scene-sky-3: #164c47;
+  --scene-far: #0c3331;
+  --scene-near: #031312;
+  --shadow-sm-line: 4px 4px 0 #1f5a54;
+  --shadow-panel: 8px 8px 0 #1f5a54;
+}
+[data-theme="storm"] {
+  --ground: #101820;
+  --panel: #17222d;
+  --panel-raised: #22303f;
+  --line: #3a5068;
+  --text-soft: #c6d3e2;
+  --text-muted: #a6b6c8;
+  --text-faint: #6e8399;
+  --scene-sky-1: #15202b;
+  --scene-sky-2: #1c2b3a;
+  --scene-sky-3: #25384b;
+  --scene-far: #182634;
+  --scene-near: #080d12;
+  --shadow-sm-line: 4px 4px 0 #3a5068;
+  --shadow-panel: 8px 8px 0 #3a5068;
+}
+[data-theme="midnight"] {
+  --ground: #150f33;
+  --panel: #1e1745;
+  --panel-raised: #2a2160;
+  --line: #43358a;
+  --text-soft: #cfc8f2;
+  --text-muted: #b0a6e0;
+  --text-faint: #7d71b8;
+  --scene-sky-1: #1b1342;
+  --scene-sky-2: #241a56;
+  --scene-sky-3: #2f226c;
+  --scene-far: #1f164c;
+  --scene-near: #0b071c;
+  --shadow-sm-line: 4px 4px 0 #43358a;
+  --shadow-panel: 8px 8px 0 #43358a;
+}
+[data-theme="ember"] {
+  --ground: #24100c;
+  --panel: #311813;
+  --panel-raised: #45221a;
+  --line: #6b3527;
+  --text-soft: #ebcfc5;
+  --text-muted: #d2aea3;
+  --text-faint: #a27565;
+  --scene-sky-1: #30140f;
+  --scene-sky-2: #421b13;
+  --scene-sky-3: #582418;
+  --scene-far: #3a1811;
+  --scene-near: #150806;
+  --shadow-sm-line: 4px 4px 0 #6b3527;
+  --shadow-panel: 8px 8px 0 #6b3527;
+}
+:root {
+  --space-1: 4px; /* Gaps inside chips and counters. */
+  --space-2: 8px; /* Gaps between tags, tabs and pills. */
+  --space-3: 12px; /* Gaps inside cards between label and title. */
+  --space-4: 16px; /* Card padding (compact). */
+  --space-5: 20px; /* Panel padding. */
+  --space-6: 28px; /* Gap between panels. */
+  --space-7: 36px; /* Page side padding. */
+  --space-8: 56px; /* Gap between page sections. */
+  --radius-tag: 6px; /* Case tags. */
+  --radius-small: 10px; /* Small buttons, stickers, step numbers. */
+  --radius-button: 12px; /* Buttons, wordmark, code viewer. */
+  --radius-row: 14px; /* Suspect rows, notebook slots. */
+  --radius-card: 16px; /* Panels and cards. */
+  --radius-hero: 20px; /* Hero cards and case cards. */
+  --radius-pill: 999px; /* Pills, tabs in the Toolkit, suspect chips, status counters. */
+  --border-hair: 2px; /* Tags, dividers, the code viewer frame. */
+  --border-chip: 2.5px; /* Pills and suspect chips. */
+  --border-base: 3px; /* Buttons, panels, cards: the default outline. */
+  --border-hero: 4px; /* Hero cards. */
+  --border-stamp: 5px; /* The CASE CLOSED stamp. */
+  --tilt-sticker: 6deg; /* The sticker. */
+  --tilt-card: -1.5deg; /* Hero and evidence cards. Exhibits alternate -1.2deg, 1deg, -0.8deg. */
+  --tilt-stamp: -12deg; /* The stamp. */
+  --font-display: "Familjen Grotesk", system-ui, sans-serif;
+  --font-body: "Familjen Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-pixel: "Pixelify Sans", monospace;
+  --text-hero: 700 96px/0.92 var(--font-display); /* Home headline only. */
+  --text-h1: 700 88px/0.95 var(--font-display); /* Screen titles: case picker, case file. Ends with a period. */
+  --text-h2: 700 56px/0.95 var(--font-display); /* Section titles on long pages. */
+  --text-h3: 700 40px/0.98 var(--font-display); /* Case card titles. */
+  --text-title: 700 26px/1 var(--font-display); /* Panel titles in the play screen. */
+  --text-lead: 400 22px/1.4 var(--font-body); /* Intro paragraphs under a title. */
+  --text-body: 400 18px/1.45 var(--font-body); /* Default text, Ama’s lines. */
+  --text-small: 400 16px/1.45 var(--font-body); /* Secondary lines in cards and chips. */
+  --text-button: 600 17px/1.2 var(--font-body); /* Buttons (primary uses 700). */
+  --text-eyebrow: 400 13px/1.4 var(--font-mono); /* Uppercase labels above titles and in stat rows. */
+  --text-code: 400 12.5px/1.7 var(--font-mono); /* Source viewer and inspector. */
+  --text-data: 700 15px/1.5 var(--font-mono); /* Handles, counts, tokens, times. */
+  --text-wordmark: 700 26px/1.1 var(--font-pixel); /* The wordmark only. */
+  --text-stamp: 700 24px/1.1 var(--font-pixel); /* The evidence stamp only. */
+}
+.hero {
+  font-family: var(--font-display);
+  font-size: 96px;
+  line-height: 0.92;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+.h1 {
+  font-family: var(--font-display);
+  font-size: 88px;
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.h2 {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.h3 {
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.lead {
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.small {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.button {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+.code {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.data {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.wordmark {
+  font-family: var(--font-pixel);
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.stamp {
+  font-family: var(--font-pixel);
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
