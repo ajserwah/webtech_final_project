@@ -1,4 +1,3 @@
-
 const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
@@ -10,19 +9,23 @@ const PORT_SITES = process.env.PORT_SITES || 3001;
 
 // GAME ORIGIN
 const gameApp = express();
-gameApp.use(express.static(path.join(__dirname, "..", "web")));
+const WEB = path.join(__dirname, "..", "web");
+
+// Pages live in web/pages but are served from the root: /play.html, /cases.html
+gameApp.use(express.static(path.join(WEB, "pages")));
+// CSS and JS: /css/..., /js/...
+gameApp.use(express.static(WEB));
+
+// Example API responses, used by api.js when a page is opened with ?fake.
+// Development only: never served in production.
+if (process.env.NODE_ENV !== "production") {
+  gameApp.use("/fixtures", express.static(path.join(__dirname, "..", "fixtures")));
+}
 
 const gameServer = http.createServer(gameApp);
 
 // Initialize Socket.io on the game origin
 const io = new Server(gameServer);
-
-// Serve the game homepage
-gameApp.get("/", (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "..", "web", "pages", "index.html")
-  );
-});
 
 // SITES ORIGIN
 const sitesApp = express();

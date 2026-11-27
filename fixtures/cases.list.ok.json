@@ -1,0 +1,8 @@
+{
+  "cases": [
+    { "id": "case-1", "number": 1, "concept": "html", "theme": "night",
+      "locked": false, "closed": false, "title": "The leaked secret." },
+    { "id": "case-2", "number": 2, "concept": "css", "theme": "dusk",
+      "locked": true, "closed": false, "title": null }
+  ]
+}
