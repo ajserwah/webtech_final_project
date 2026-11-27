@@ -1,0 +1,13 @@
+{
+  "runId": "r_8f3k2q",
+  "caseId": "case-1",
+  "mode": "story",
+  "status": "active",
+  "clues": [
+    { "clueId": "C1", "notebookText": "The post came from @sel_om at 9:04 PM.",
+      "foundAt": "2026-11-21T10:02:11Z" }
+  ],
+  "links": [ { "clueId": "C1", "suspectId": "selina" } ],
+  "hintsUsed": 1,
+  "score": null
+}
